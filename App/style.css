@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+body {
+  background: hsl(0, 0%, 11%);
+}
+
+.navigation_container {
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  height: 55px;
+  border-bottom: 0.5px solid rgb(225, 225, 225);
+  position: fixed;
+  background-color: hsl(0, 0%, 11%);
+}
+@media screen and (max-width: 1092px) {
+  .navigation_container {
+    padding: 0 1rem;
+  }
+}
+.navigation_container .logo svg {
+  width: 100px;
+}
+.navigation_container .nav_items a {
+  color: rgb(255, 255, 255);
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding-left: 40px;
+}
+.navigation_container .nav_items a:hover {
+  text-decoration: underline;
+}
+
+.startup-container {
+  padding-top: 30px;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+.startup-container .startup-container-left-element {
+  padding-top: 30px;
+  margin-left: 2rem;
+  color: rgb(255, 255, 255);
+  width: 80%;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+@media screen and (max-width: 1092px) {
+  .startup-container .startup-container-left-element {
+    width: 60%;
+  }
+}
+.startup-container .startup-container-left-element .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 1098px) {
+  .startup-container .startup-container-left-element .header-container {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+.startup-container .startup-container-left-element .header-container .heading-subheading .heading-subheading-upper-info h1 {
+  font-size: 6.5rem;
+  margin-top: 30px;
+}
+@media screen and (max-width: 1280px) {
+  .startup-container .startup-container-left-element .header-container .heading-subheading .heading-subheading-upper-info h1 {
+    font-size: 4.5rem;
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 1092px) {
+  .startup-container .startup-container-left-element .header-container .heading-subheading .heading-subheading-upper-info h1 {
+    font-size: 3.5rem;
+  }
+}
+.startup-container .startup-container-left-element .header-container .heading-subheading p {
+  font-size: 1.2rem;
+  margin-top: -10px;
+}
+.startup-container .startup-container-left-element .header-container .heading-subheading-lower-info {
+  margin-top: 40px;
+}
+.startup-container .startup-container-left-element .header-container .heading-subheading-lower-info .onwer {
+  font-weight: 100;
+  font-size: 0.9rem;
+}
+.startup-container .startup-container-left-element .header-container .heading-subheading-lower-info .warning {
+  padding-top: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+.startup-container .startup-container-left-element .asana-linked-botton {
+  cursor: pointer;
+  width: 200px;
+  height: 200px;
+  margin-right: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  background-color: hsl(0, 0%, 11%);
+  transition: all 0.25s ease-in-out;
+  margin-top: 50px;
+}
+@media screen and (max-width: 1092px) {
+  .startup-container .startup-container-left-element .asana-linked-botton {
+    width: 100%;
+    margin-right: 0px;
+  }
+}
+.startup-container .startup-container-left-element .asana-linked-botton svg {
+  margin-bottom: 20px;
+}
+.startup-container .startup-container-left-element .asana-linked-botton h1 {
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.startup-container .startup-container-left-element .asana-linked-botton p {
+  color: rgb(255, 255, 255);
+  font-weight: 100;
+  text-decoration: none;
+  text-decoration: none;
+}
+.startup-container .startup-container-left-element .asana-linked-botton:hover {
+  filter: invert(1);
+}
+.startup-container .startup-container-left-element .asana-linked-botton:active {
+  filter: invert(1);
+}
+
+.gif-container {
+  height: 100vh;
+  width: 100%;
+  margin-top: 20px;
+  overflow: hidden;
+}
+.gif-container img {
+  width: 110%;
+  margin-top: 30px;
+  padding-right: 90px;
+  transform: scale(1);
+}
+@media screen and (max-width: 1092px) {
+  .gif-container img {
+    padding-right: 0;
+  }
+}
+
+.startup-container-right-element {
+  border-left: 1px solid rgb(225, 225, 225);
+  margin-right: 2rem;
+  color: rgb(255, 255, 255);
+  width: 20%;
+}
+@media screen and (max-width: 1092px) {
+  .startup-container-right-element {
+    width: 40%;
+  }
+}
+.startup-container-right-element .header-container-2 {
+  margin-top: 22px;
+  border-bottom: 0.5px solid rgb(225, 225, 225);
+  width: 100%;
+  height: 80px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+}
+.startup-container-right-element .header-container-2 h1 {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.startup-container-right-element .links {
+  margin-top: 10px;
+  overflow: auto;
+  height: 700px;
+}
+.startup-container-right-element .links .link-list {
+  display: flex;
+  justify-content: space-between;
+  background-color: hsl(0, 0%, 11%);
+  transition: all 0.15s ease-in-out;
+  border-bottom: 0.5px solid rgb(225, 225, 225);
+  margin-left: 20px;
+  cursor: pointer;
+  padding: 13px 0;
+  padding-right: 20px;
+}
+.startup-container-right-element .links .link-list a {
+  color: rgb(255, 255, 255);
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+.startup-container-right-element .links .link-list .linkup {
+  width: 100%;
+}
+.startup-container-right-element .links .link-list:hover {
+  filter: invert(1);
+  padding: 13px 20px;
+}
+.startup-container-right-element .links .link-list:active {
+  filter: invert(1);
+}
+.startup-container-right-element .links .maingap {
+  display: flex;
+  justify-content: space-between;
+  background-color: hsl(0, 0%, 11%);
+  transition: all 0.15s ease-in-out;
+  margin-left: 20px;
+  cursor: pointer;
+  padding: 13px 0;
+  padding-right: 20px;
+}
+.startup-container-right-element .links .extra {
+  height: 50px;
+  border: none !important;
+}
+
+@media screen and (max-width: 1092px) {
+  .startup-container {
+    height: 90vh;
+  }
+  .asana-linked-botton {
+    width: 700px;
+    height: 200px;
+  }
+  .startup-container-left-element {
+    margin-right: 20px;
+    width: 60%;
+  }
+}/*# sourceMappingURL=style.css.map */
